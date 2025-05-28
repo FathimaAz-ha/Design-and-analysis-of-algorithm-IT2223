@@ -1,0 +1,340 @@
+>> a=5
+
+a =
+
+     5
+
+>> a=5;%does not show the result
+>> b=3
+
+b =
+
+     3
+
+>> a+b
+
+ans =
+
+     8
+
+>> a*b
+
+ans =
+
+    15
+
+>> a/b
+
+ans =
+
+    1.6667
+
+>> a-b
+
+ans =
+
+     2
+
+>> c = a + b
+
+c =
+
+     8
+
+>> d = a* b
+
+d =
+
+    15
+
+>> e = a/b
+
+e =
+
+    1.6667
+
+>> f = a - b
+
+f =
+
+     2
+
+>> A = [1 2 3] %creating a matrix
+
+A =
+
+     1     2     3
+
+>>  B = [2;3;5] % semi colon creates a new line
+
+B =
+
+     2
+     3
+     5
+
+>> C = [2 3 4;5 6 7;8 9 1] %3X3 matrix
+
+C =
+
+     2     3     4
+     5     6     7
+     8     9     1
+
+>> size(C) %size of the matrix
+
+ans =
+
+     3     3
+
+>>  size(A) %answer provided as row column
+
+ans =
+
+     1     3
+
+>> numel(A) %number of elements
+
+ans =
+
+     3
+
+>> numel(C)
+
+ans =
+
+     9
+
+>> sum(C,1) %summation of C matrix's column wise view
+
+ans =
+
+    15    18    12
+
+>> sum(C,2) %summation of C matrixe's row view
+
+ans =
+
+     9
+    18
+    18
+
+>> sum(sum(C)) %total summation of C matrix
+
+ans =
+
+    45
+
+>> min(c) %minimum element in C matrix
+
+ans =
+
+     8
+
+>> min(C) %minimum element in C matrix
+
+ans =
+
+     2     3     1
+
+>> min(C) %minimum element in C matrix in each row
+
+ans =
+
+     2     3     1
+
+>> min(C) %minimum element in C matrix in each column
+
+ans =
+
+     2     3     1
+
+>> min(min(C)) %minimum element of matrix C
+
+ans =
+
+     1
+
+>> max(C) %maximum element of C matrix column wise
+
+ans =
+
+     8     9     7
+
+>> max(max(C)) %maximum element of Matrix C
+
+ans =
+
+     9
+
+>> C(2) %element in second column
+
+ans =
+
+     5
+
+>> C(2,1) %element in second row first column 
+
+ans =
+
+     5
+
+>> C(2) %element in second row
+
+ans =
+
+     5
+
+>> C(2,:)
+
+ans =
+
+     5     6     7
+
+>> C(2,:) %elements of second row
+
+ans =
+
+     5     6     7
+
+>> C(:,3) %elements until 3rd column
+
+ans =
+
+     4
+     7
+     1
+
+>> C(1,end)
+
+ans =
+
+     4
+
+>> C(2,end)
+
+ans =
+
+     7
+
+>> C(3,end)
+
+ans =
+
+     1
+
+>> C(end,1)
+
+ans =
+
+     8
+
+>> A=[2 4 6  8;10 12 14 16; 18 20 22 24;26 28 30 32]
+
+A =
+
+     2     4     6     8
+    10    12    14    16
+    18    20    22    24
+    26    28    30    32
+
+>> B=[5 7 9 11;3 1 0 13;21 31 25 23;27 29 15 17]
+
+B =
+
+     5     7     9    11
+     3     1     0    13
+    21    31    25    23
+    27    29    15    17
+
+>> A+B
+
+ans =
+
+     7    11    15    19
+    13    13    14    29
+    39    51    47    47
+    53    57    45    49
+
+>> A*B
+
+ans =
+
+         364         436         288         348
+         812         980         680         860
+        1260        1524        1072        1372
+        1708        2068        1464        1884
+
+>> A+5
+
+ans =
+
+     7     9    11    13
+    15    17    19    21
+    23    25    27    29
+    31    33    35    37
+
+>>  A-2
+
+ans =
+
+     0     2     4     6
+     8    10    12    14
+    16    18    20    22
+    24    26    28    30
+
+>> A/3
+
+ans =
+
+    0.6667    1.3333    2.0000    2.6667
+    3.3333    4.0000    4.6667    5.3333
+    6.0000    6.6667    7.3333    8.0000
+    8.6667    9.3333   10.0000   10.6667
+
+>>  A*5
+
+ans =
+
+    10    20    30    40
+    50    60    70    80
+    90   100   110   120
+   130   140   150   160
+
+>> A.*B
+
+ans =
+
+    10    28    54    88
+    30    12     0   208
+   378   620   550   552
+   702   812   450   544
+
+>> A=zeros(4,3)
+
+A =
+
+     0     0     0
+     0     0     0
+     0     0     0
+     0     0     0
+
+>> B=ones(4,3)
+
+B =
+
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+
+>> [A B]
+
+ans =
+
+     0     0     0     1     1     1
+     0     0     0     1     1     1
+     0     0     0     1     1     1
+     0     0     0     1     1     1
+
+>> 
